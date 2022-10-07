@@ -5,32 +5,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Leaflet Step-1</title>
-
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-    crossorigin="" />
-
-  <!-- Our CSS -->
-  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <title>USGS Earthquakes Data Visualization</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/styles.css">
 </head>
 
 <body>
 
-  <!-- The div that holds our map -->
-  <div id="map"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>United States Geological Survery <br> (USGS) Earthquakes Data Visualization</h1>
+        <a href="#">Home</a>
+        <a href="Leaflet-Part-1/index.html">Earthquakes Map</a>
+        <a href="Leaflet-Part-2/index.html">Tectonic Plates</a>
+      </div>
+    </div>
+    <!-- Details -->
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Left side -->
+        <div class="col-md-12 jumbotron">
+          <p>
+            The USGS monitors, analyzes, and predicts current and evolving Earth-system interactions and delivers
+            actionable information at scales and timeframes relevant to decision makers. The USGS provides science about
+            natural hazards, natural resources, ecosystems and environmental health, and the effects of climate and
+            land-use change.
+          </p>
+          <br>
+          <p>
+            The USGS is interested in building a new set of tools that will allow them to visualize their earthquake
+            data. They collect a massive amount of data from all over the world each day, but they lack a meaningful way
+            of displaying it. Their hope is that being able to visualize their data will allow them to better educate
+            the public and other government organizations (and hopefully secure more funding) on issues facing our
+            planet
+          </p>
+          <br>
+          <p>
+            This site creates the maps with each visualization results of the collected earthquakes and tectonic plates data.
+          </p>
+          <br>
+        </div>
+      </div>
+    </div>
 
-  <!-- Leaflet JS -->
-  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-    crossorigin=""></script>
-  <!-- D3 JavaScript -->
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  <!-- API key -->
-  <script type="text/javascript" src="static/js/config.js"></script>
-  <!-- Our JavaScript -->
-  <script type="text/javascript" src="static/js/logic.js"></script>
+    <footer> Leaflet Challenge | Myles Browne </footer>
 </body>
 
 </html>
